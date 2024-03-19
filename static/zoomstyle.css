@@ -12,8 +12,13 @@ body, html {
   justify-content: center;
   align-items: center;
   transition: transform 1s ease-in-out;
+  /* Center the zoomed content */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .zoomed {
-  transform: scale(2);
+  transform: translate(-50%, -50%) scale(2);
 }
