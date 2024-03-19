@@ -37,3 +37,63 @@ input:checked + .slider-round {
 .fixed-nav-bar-right:hover .navbar-link:hover {
   color: var(--ctp-frappe-blue) /*blue*/;
 }
+
+h1 {
+    font-size: 96px;
+    font-family: var(--font-family);
+    text-shadow: 0 0 10px var(--text-color),
+                 0 0 10px var(--text-glow),
+                 0 0 30px var(--text-glow),
+                 0 0 40px var(--text-color),
+                 0 0 50px var(--text-glow),
+                 0 0 60px var(--text-color),
+                 0 0 70px var(--text-glow),
+                 0 0 80px #000000;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 20px;
+}
+  
+p {
+    font-size: 18px;
+    margin-bottom: 2px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    text-shadow: 5px 5px 5px var(--text-glow);
+    animation: paragraphTween 1.2s ease-in-out forwards;
+}
+  
+.linkp a {
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid transparent;
+    transition: 0.15s ease-in-out;
+    text-shadow: 5px 5px 5px var(--text-glow);
+}
+  
+.linkp a:hover {
+    color: rgb(199, 192, 192);
+}
+  
+a {
+    font-size: 18px;
+    text-decoration: underline;
+    color: var(--text-color);
+    
+    text-shadow: 5px 5px 5px var(--text-glow);
+}
+
+.cursor {
+    width: 7px;
+    height: 7px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0.8;
+    z-index: 10000;
+}
