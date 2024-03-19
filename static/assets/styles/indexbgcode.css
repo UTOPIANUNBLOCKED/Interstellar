@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu/Ubuntu.woff2') format('woff2'),
+         url('../fonts/ubuntu/Ubuntu.woff') format('woff'),
+         url('../fonts/ubuntu/Ubuntu.ttf') format('truetype'),
+         url('../fonts/ubuntu/Ubuntu.otf') format('otf');
+}
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+:root {
+  --page: var(--ctp-macchiato-base) /*base*/;
+  --background: #1e1e2e;
+  --background-secondary: var(--ctp-macchiato-mantle) /*mantle*/;
+  --background-dark: #11111b /*crust*/;
+  --background-image: url('/theme/homebg.png');
+    --font-family: 'Ubuntu', sans-serif;
+    --text-color: #fff;
+    --border-color1: #000000;
+    --border-color2: #ffffff;
+    --hover-color: #1a1818;
+    --text-glow: #000000
+}
