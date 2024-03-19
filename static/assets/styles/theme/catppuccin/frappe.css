@@ -97,3 +97,32 @@ a {
     opacity: 0.8;
     z-index: 10000;
 }
+
+@keyframes mainHeaderAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-25%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+  
+@keyframes paragraphTween {
+    0% {
+        transform: translateX(-4%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+  
+@keyframes borderAnimation {
+    0% {
+        border-image-source: linear-gradient(45deg, var(--border-color1), var(--border-color2));
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, var(--border-color2), var(--border-color1));
+    }
+}
