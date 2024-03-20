@@ -11,7 +11,7 @@
     <script src="./m/config.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/styles/main.css" />
-    <link rel="stylesheet" href="/assets/styles/theme/solid/default.css?v=1" />
+    <link rel="stylesheet" href="/assets/styles/theme/catppuccin/mocha.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -20,29 +20,11 @@
     <script src="/assets/scripts/g.js?v=1"></script>
   </head>
   <body>
-    <div class="fixed-nav-bar">
-      <a class="icon" href="/./"><img alt="nav" id="INImg" src="main.png" /></a>
-      <div class="fixed-nav-bar-right">
-        <a class="navbar-link" href="/./-">
-          <i class="fa-solid fa-gamepad navbar-icon"></i>
-          Games
-        </a>
-        <a class="navbar-link" href="/./~">
-          <span class="material-symbols-outlined weird-icon">apps</span>
-          Apps
-        </a>
-        <a class="navbar-link" href="/./0">
-          <i class="fa-solid fa-table navbar-icon"></i>
-          Tabs
-        </a>
-        <a class="navbar-link" href="/./!">
-          <i class="fa-solid fa-gear navbar-icon settings-icon"></i>
-          Settings
-        </a>
+    <a href="/" target="_blank" style="text-decoration: none;color:white;">Go Back</p>
       </div>
     </div>
     <div class="input-container">
-      <input type="text" id="searchbarbottom" onkeyup="search_bar()" placeholder="Search" />
+      <input type="text" id="searchbarbottom" onkeyup="search_bar()" placeholder="Find a game!" />
       <select id="category" name="category" onchange="show_category()">
         <option value="all">All</option>
         <option value="2P">Multiplayer</option>
