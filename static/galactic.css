@@ -25,19 +25,32 @@ body, html {
 .stars:before {
   content: '';
   position: absolute;
-  width: 2px;
-  height: 2px;
+  width: 1px; /* Adjust star size as needed */
+  height: 1px;
   background-color: #fff; /* Star color */
-  animation: shootingStar 5s linear infinite;
+  animation: shootingStar 10s linear infinite;
 }
 
 @keyframes shootingStar {
   from {
-    transform: translateY(-100%) translateX(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(100%) translateX(100vw);
+    transform: translateY(-10%) translateX(-10%);
     opacity: 0;
   }
+  to {
+    transform: translateY(110%) translateX(110%);
+    opacity: 1;
+  }
+}
+
+/* Generate more stars */
+.stars:before {
+  content: '';
+  position: absolute;
+  width: 1px; /* Adjust star size as needed */
+  height: 1px;
+  background-color: #fff; /* Star color */
+  animation: shootingStar 10s linear infinite;
+  top: calc(100% * var(--rand-y));
+  left: calc(100% * var(--rand-x));
+  animation-delay: calc(5s * var(--rand-delay));
 }
