@@ -22,6 +22,7 @@ body, html {
   height: 100%;
 }
 
+/* Generate more stars */
 .stars:before {
   content: '';
   position: absolute;
@@ -29,6 +30,9 @@ body, html {
   height: 1px;
   background-color: #fff; /* Star color */
   animation: shootingStar 10s linear infinite;
+  top: var(--rand-y);
+  left: var(--rand-x);
+  animation-delay: var(--rand-delay);
 }
 
 @keyframes shootingStar {
@@ -42,15 +46,9 @@ body, html {
   }
 }
 
-/* Generate more stars */
+/* Define custom properties for random positions and delays */
 .stars:before {
-  content: '';
-  position: absolute;
-  width: 1px; /* Adjust star size as needed */
-  height: 1px;
-  background-color: #fff; /* Star color */
-  animation: shootingStar 10s linear infinite;
-  top: calc(100% * var(--rand-y));
-  left: calc(100% * var(--rand-x));
-  animation-delay: calc(5s * var(--rand-delay));
+  --rand-x: calc(100vw * calc(random())); /* Random X position */
+  --rand-y: calc(100vh * calc(random())); /* Random Y position */
+  --rand-delay: calc(5s * random()); /* Random animation delay */
 }
