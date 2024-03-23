@@ -8,7 +8,7 @@ try {
 
 if (!inFrame && !navigator.userAgent.includes('Firefox')) {
   const popup = open('about:blank', '_blank')
-  if (!popup || popup.closed) alert('Please allow popups and redirects.')
+  if (!popup || popup.closed) alert('Welcome to Bl0XXED! The best and fastest proxy! Make sure to check out the games and bookmarklets!')
   else {
     popup.document.write(`
             <iframe src="${
