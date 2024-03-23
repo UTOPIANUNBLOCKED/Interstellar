@@ -8,7 +8,8 @@ try {
 
 if (!inFrame && !navigator.userAgent.includes('Firefox')) {
   const popup = open('about:blank', '_blank')
-  if (!popup || popup.closed) alert('Welcome to Bl0XXED! The best and fastest proxy! Make sure to check out the games and bookmarklets!')
+  if (!popup || popup.closed) alert('Welcome to Bl0XXED! We have already Activated: Anti-Closing')
+ onbeforeunload=i=>1
   else {
     popup.document.write(`
             <iframe src="${
