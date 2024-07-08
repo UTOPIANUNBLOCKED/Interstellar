@@ -23,6 +23,7 @@ const routes = [
   { path: '/0', file: 'tabs.html' },
   { path: '/&', file: 'go.html' },
   { path: '/w', file: 'edu.html' },
+  { path: '/p', file: 'BookMarklets.html' },
 ]
 
 app.get('/y/*', cors({ origin: false }), async (req, res, next) => {
